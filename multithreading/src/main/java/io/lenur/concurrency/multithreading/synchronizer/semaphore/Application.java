@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.semaphore;
+package io.lenur.concurrency.multithreading.synchronizer.semaphore;
 
 import java.util.concurrent.Semaphore;
 

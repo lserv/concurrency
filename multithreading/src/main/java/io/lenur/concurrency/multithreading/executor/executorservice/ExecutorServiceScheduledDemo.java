@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.executorservice;
+package io.lenur.concurrency.multithreading.executor.executorservice;
 
 import java.time.LocalTime;
 import java.util.concurrent.Executors;

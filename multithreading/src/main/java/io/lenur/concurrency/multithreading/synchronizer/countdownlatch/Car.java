@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.countdownlatch;
+package io.lenur.concurrency.multithreading.synchronizer.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 

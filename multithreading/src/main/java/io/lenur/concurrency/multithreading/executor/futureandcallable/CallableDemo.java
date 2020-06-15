@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.futureandcallable;
+package io.lenur.concurrency.multithreading.executor.futureandcallable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
