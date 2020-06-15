@@ -4,7 +4,7 @@ public class Counter implements Countable {
     private int iteration = 0;
 
     @Override
-    public int getValue() {
+    public synchronized int getValue() {
         return iteration;
     }
 
