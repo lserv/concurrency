@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.collection;
+package io.lenur.concurrency.multithreading.queue;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
