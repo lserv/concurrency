@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.synchronizer.thread.waitnotify;
+package io.lenur.concurrency.multithreading.synchronizer.thread.waitnotify.senderreceiver;
 
 import java.util.logging.Logger;
 
