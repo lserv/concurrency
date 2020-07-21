@@ -1,10 +1,10 @@
-package io.lenur.concurrency.multithreading.deadlock;
+package io.lenur.concurrency.multithreading.deadlock.demo1;
 
-class ThreadFirst extends Thread {
+class ThreadSecond extends Thread {
     private final Object object1;
     private final Object object2;
 
-    public ThreadFirst(
+    public ThreadSecond(
             String name,
             Object object1,
             Object object2
@@ -16,8 +16,8 @@ class ThreadFirst extends Thread {
 
     @Override
     public void run() {
-        synchronized (object1) {
-            System.out.println(getName()  + ": Holding lock 1...");
+        synchronized (object2) {
+            System.out.println(getName()  + ": Holding lock 2...");
 
             try {
                 Thread.sleep(10);
@@ -25,10 +25,10 @@ class ThreadFirst extends Thread {
                 e.printStackTrace();
             }
 
-            System.out.println(getName()  + ": Waiting for lock 2...");
+            System.out.println(getName()  + ": Waiting for lock 1...");
 
-            synchronized (object2) {
-                System.out.println(getName()  + ": Holding lock 1 & 2...");
+            synchronized (object1) {
+                System.out.println(getName()  + ": Holding lock 2 & 1...");
             }
         }
     }

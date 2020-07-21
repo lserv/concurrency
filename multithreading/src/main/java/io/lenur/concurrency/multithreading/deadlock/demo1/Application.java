@@ -1,4 +1,4 @@
-package io.lenur.concurrency.multithreading.deadlock;
+package io.lenur.concurrency.multithreading.deadlock.demo1;
 
 public class Application {
 
