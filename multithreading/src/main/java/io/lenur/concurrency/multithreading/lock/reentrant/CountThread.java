@@ -15,7 +15,6 @@ class CountThread implements Runnable {
     public void run() {
         locker.lock();
         try {
-            resource.init();
             for (int i = 1; i < 3; i++) {
                 System.out.printf("%s %d \n", Thread.currentThread().getName(), resource.getX());
                 resource.increment();
