@@ -17,7 +17,7 @@ class ThreadSecond extends Thread {
     @Override
     public void run() {
         synchronized (object2) {
-            System.out.println(getName()  + ": Holding lock 2...");
+            System.out.println(getName() + ": Holding lock 2...");
 
             try {
                 Thread.sleep(10);
@@ -25,10 +25,10 @@ class ThreadSecond extends Thread {
                 e.printStackTrace();
             }
 
-            System.out.println(getName()  + ": Waiting for lock 1...");
+            System.out.println(getName() + ": Waiting for lock 1...");
 
             synchronized (object1) {
-                System.out.println(getName()  + ": Holding lock 2 & 1...");
+                System.out.println(getName() + ": Holding lock 2 & 1...");
             }
         }
     }

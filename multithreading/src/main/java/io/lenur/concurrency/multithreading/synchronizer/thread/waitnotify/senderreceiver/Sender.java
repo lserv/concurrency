@@ -15,13 +15,13 @@ public class Sender implements Runnable {
 
     public void run() {
         String[] packets = {
-          "First packet",
-          "Second packet",
-          "Third packet",
-          "Fourth packet",
-          "End"
+                "First packet",
+                "Second packet",
+                "Third packet",
+                "Fourth packet",
+                "End"
         };
-  
+
         for (String packet : packets) {
             data.send(packet);
 
@@ -30,7 +30,7 @@ public class Sender implements Runnable {
             System.out.println(msg);
             try {
                 TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e)  {
+            } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 LOGGER.warning("Thread interrupted");
             }

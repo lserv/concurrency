@@ -15,13 +15,13 @@ public class Receiver implements Runnable {
 
     public void run() {
         for (String receivedMessage = load.receive();
-          !"End".equals(receivedMessage);
-          receivedMessage = load.receive()) {
+             !"End".equals(receivedMessage);
+             receivedMessage = load.receive()) {
 
             String msg = String
                     .format("Received a message %s", receivedMessage);
             System.out.println(msg);
- 
+
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {

@@ -17,7 +17,7 @@ class ThreadFirst extends Thread {
     @Override
     public void run() {
         synchronized (object1) {
-            System.out.println(getName()  + ": Holding lock 1...");
+            System.out.println(getName() + ": Holding lock 1...");
 
             try {
                 Thread.sleep(10);
@@ -25,10 +25,10 @@ class ThreadFirst extends Thread {
                 e.printStackTrace();
             }
 
-            System.out.println(getName()  + ": Waiting for lock 2...");
+            System.out.println(getName() + ": Waiting for lock 2...");
 
             synchronized (object2) {
-                System.out.println(getName()  + ": Holding lock 1 & 2...");
+                System.out.println(getName() + ": Holding lock 1 & 2...");
             }
         }
     }

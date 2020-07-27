@@ -5,6 +5,7 @@ import java.util.List;
 public class Producer extends Thread {
     private final SharedFiFoQueue queue;
     private final List<String> words = List.of("Tear", "Car", "Wheel");
+
     public Producer(SharedFiFoQueue queue) {
         this.queue = queue;
     }

@@ -15,7 +15,7 @@ public class ConcurrentQueueDemo {
     }
 
     private static void addNumbers(Queue<Integer> queue) {
-        for (int i=0; i < 500; i++) {
+        for (int i = 0; i < 500; i++) {
             queue.add(i);
         }
     }
